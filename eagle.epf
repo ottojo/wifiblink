@@ -1,2 +1,8 @@
 [Eagle]
 Version="09 02 00"
+Globals="Globals"
+
+[Globals]
+AutoSaveProject=1
+UsedLibraryUrn="urn:adsk.eagle:library:371"
+UsedLibraryUrn="urn:adsk.eagle:library:513"
