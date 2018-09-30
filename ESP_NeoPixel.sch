@@ -6082,6 +6082,50 @@ OSHW_LOGO</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="jonas-switch">
+<packages>
+<package name="TL3315NF100Q">
+<smd name="P1" x="-2.225" y="1.75" dx="0.7" dy="0.7" layer="1"/>
+<smd name="P4" x="2.225" y="-1.75" dx="0.7" dy="0.7" layer="1"/>
+<smd name="P3" x="-2.225" y="-1.75" dx="0.7" dy="0.7" layer="1"/>
+<smd name="P2" x="2.225" y="1.75" dx="0.7" dy="0.7" layer="1"/>
+<wire x1="-1.5" y1="2.25" x2="1.5" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-2.25" y1="1" x2="-2.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.25" y1="1" x2="2.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2.25" x2="1.5" y2="-2.25" width="0.127" layer="21"/>
+<text x="-2.413" y="-3.429" size="0.8128" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="S">
+<wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="0" y2="3.175" width="0.254" layer="94"/>
+<text x="-2.54" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TL3315NF100Q" prefix="S">
+<gates>
+<gate name="G$1" symbol="S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TL3315NF100Q">
+<connects>
+<connect gate="G$1" pin="P" pad="P1 P2" route="any"/>
+<connect gate="G$1" pin="S" pad="P3 P4" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6128,6 +6172,10 @@ OSHW_LOGO</description>
 <part name="LED2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" "/>
+<part name="S1" library="jonas-switch" deviceset="TL3315NF100Q" device=""/>
+<part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
+<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6255,6 +6303,20 @@ OSHW_LOGO</description>
 <instance part="R6" gate="G$1" x="45.72" y="152.4" rot="R90">
 <attribute name="NAME" x="44.2214" y="148.59" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="S1" gate="G$1" x="218.44" y="124.46">
+<attribute name="NAME" x="215.9" y="120.65" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="222.25" y="120.65" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R7" gate="G$1" x="218.44" y="109.22" rot="R90">
+<attribute name="NAME" x="216.916" y="109.22" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="219.964" y="109.22" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="+3V2" gate="G$1" x="218.44" y="134.62">
+<attribute name="VALUE" x="215.9" y="129.54" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND7" gate="1" x="218.44" y="99.06">
+<attribute name="VALUE" x="215.9" y="96.52" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6316,6 +6378,15 @@ OSHW_LOGO</description>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <label x="35.56" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="S1" gate="G$1" pin="P"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="119.38" x2="218.44" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="116.84" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="116.84" x2="215.9" y2="116.84" width="0.1524" layer="91"/>
+<junction x="218.44" y="116.84"/>
+<label x="215.9" y="116.84" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -6440,6 +6511,11 @@ OSHW_LOGO</description>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="45.72" y1="134.62" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="218.44" y1="104.14" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -6456,6 +6532,11 @@ OSHW_LOGO</description>
 <wire x1="154.94" y1="71.12" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
 <junction x="154.94" y="71.12"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<pinref part="S1" gate="G$1" pin="S"/>
+<wire x1="218.44" y1="132.08" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
