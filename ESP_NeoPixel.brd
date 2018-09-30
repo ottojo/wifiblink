@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -323,6 +323,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.8" y="2" size="0.6096" layer="25">&gt;NAME</text>
 <rectangle x1="-0.95" y1="-0.95" x2="-0.15" y2="0.95" layer="29"/>
 <rectangle x1="0.15" y1="-0.95" x2="0.95" y2="0.95" layer="29"/>
+<circle x="-0.635" y="1.397" radius="0.3" width="0" layer="21"/>
 </package>
 </packages>
 </library>
@@ -679,7 +680,7 @@ design rules under a new name.</description>
 <param name="mlMaxStopFrame" value="0mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="0.2mm"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="100mm"/>

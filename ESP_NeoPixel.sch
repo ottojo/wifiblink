@@ -717,6 +717,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.8" y="2" size="0.6096" layer="25">&gt;NAME</text>
 <rectangle x1="-0.95" y1="-0.95" x2="-0.15" y2="0.95" layer="29"/>
 <rectangle x1="0.15" y1="-0.95" x2="0.95" y2="0.95" layer="29"/>
+<circle x="-0.635" y="1.397" radius="0.3" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
