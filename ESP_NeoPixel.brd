@@ -170,6 +170,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTRlNWI0" projecturn="a.cGVyc29uYWw6dWUyOTRlNWI0IzIwMTgwOTMwMTUxNzM0NzMx" f3durn="urn:adsk.wipprod:dm.lineage:7b53gxeNQ0mJTjwWGVlYEQ" pcbguid="beee229b-ca1a-41e8-b53f-387b8cffb208" lastpulledtime="" lastsyncedchangeguid="99687992-9acd-0b6a-2775-a8b7a6ba92e0"/>
 <plain>
 <wire x1="12.8" y1="-8.65" x2="12.8" y2="21.5" width="0" layer="20"/>
 <wire x1="-12.8" y1="21.5" x2="-12.8" y2="-1.5" width="0" layer="20"/>
@@ -188,68 +189,6 @@
 /wifiblink</text>
 </plain>
 <libraries>
-<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
-<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
-This library contains electrically-functional connectors. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="1X08_LOCK_NO_SILK" urn="urn:adsk.eagle:footprint:37771/1" library_version="1">
-<description>&lt;h3&gt;Plated Through Hole -8 Pin Locking Footprint No Silk&lt;/h3&gt;
-Holes are offset 0.005", to hold pins in place during soldering. 
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:8&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_08&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="1" x="0" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="5.08" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="7.62" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5" x="10.16" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6" x="12.7" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="7" x="15.24" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="8" x="17.78" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
-<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
-<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
-<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
-<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
-<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="1X08_LOCK_NO_SILK" urn="urn:adsk.eagle:package:38147/1" type="box" library_version="1">
-<description>Plated Through Hole -8 Pin Locking Footprint No Silk
-Holes are offset 0.005", to hold pins in place during soldering. 
-Specifications:
-Pin count:8
-Pin pitch:0.1"
-
-Example device(s):
-CONN_08
-</description>
-<packageinstances>
-<packageinstance name="1X08_LOCK_NO_SILK"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
 <library name="jonas-phoenix" urn="urn:adsk.eagle:library:5637528">
 <packages>
 <package name="MKDS3-2-5.00" urn="urn:adsk.eagle:footprint:5637531/1" library_version="2">
@@ -1574,6 +1513,88 @@ OSHW_LOGO</description>
 </package3d>
 </packages3d>
 </library>
+<library name="led" urn="urn:adsk.eagle:library:259">
+<description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
+Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternational.com&amp;gt;&lt;/author&gt; with DUOLED</description>
+<packages>
+<package name="CHIP-LED0603" urn="urn:adsk.eagle:footprint:15671/1" library_version="3">
+<description>&lt;b&gt;Hyper CHIPLED Hyper-Bright LED&lt;/b&gt;&lt;p&gt;
+LB Q993&lt;br&gt;
+Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
+<wire x1="-0.4" y1="0.45" x2="-0.4" y2="-0.45" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.45" x2="0.4" y2="-0.45" width="0.1016" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-0.635" y="-0.635" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="1.905" y="-0.635" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.45" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="0.45" y2="-0.45" layer="51"/>
+<rectangle x1="-0.45" y1="0" x2="-0.3" y2="0.3" layer="21"/>
+<rectangle x1="0.3" y1="0" x2="0.45" y2="0.3" layer="21"/>
+<rectangle x1="-0.15" y1="0" x2="0.15" y2="0.3" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="CHIP-LED0603" urn="urn:adsk.eagle:package:15819/3" type="model" library_version="3">
+<description>Hyper CHIPLED Hyper-Bright LED
+LB Q993
+Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
+<packageinstances>
+<packageinstance name="CHIP-LED0603"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="jonas_Sparkfun-Connectors" urn="urn:adsk.eagle:library:3855661">
+<packages>
+<package name="1X08_LOCK_NO_SILK" urn="urn:adsk.eagle:footprint:37771/1" library_version="7">
+<description>&lt;h3&gt;Plated Through Hole -8 Pin Locking Footprint No Silk&lt;/h3&gt;
+Holes are offset 0.005", to hold pins in place during soldering. 
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:8&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_08&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="7.62" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="5" x="10.16" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="6" x="12.7" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="7" x="15.24" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="8" x="17.78" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
+<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
+<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="1X08_LOCK_NO_SILK" urn="urn:adsk.eagle:package:3855663/2" type="model" library_version="7">
+<description>Plated Through Hole -8 Pin Locking Footprint No Silk
+Holes are offset 0.005", to hold pins in place during soldering. 
+Specifications:
+Pin count:8
+Pin pitch:0.1"
+
+Example device(s):
+CONN_08
+</description>
+<packageinstances>
+<packageinstance name="1X08_LOCK_NO_SILK"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1767,10 +1788,10 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X08_LOCK_NO_SILK" package3d_urn="urn:adsk.eagle:package:38147/1" value="" x="-11.43" y="0" rot="R90">
+<element name="J1" library="jonas_Sparkfun-Connectors" library_urn="urn:adsk.eagle:library:3855661" package="1X08_LOCK_NO_SILK" package3d_urn="urn:adsk.eagle:package:3855663/2" value="CONN_08" x="-11.43" y="0" rot="R90">
 <attribute name="VALUE" x="-9.398" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X08_LOCK_NO_SILK" package3d_urn="urn:adsk.eagle:package:38147/1" value="" x="11.43" y="0" rot="R90">
+<element name="J2" library="jonas_Sparkfun-Connectors" library_urn="urn:adsk.eagle:library:3855661" package="1X08_LOCK_NO_SILK" package3d_urn="urn:adsk.eagle:package:3855663/2" value="CONN_08" x="11.43" y="0" rot="R90">
 <attribute name="VALUE" x="13.462" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="J3" library="jonas-phoenix" library_urn="urn:adsk.eagle:library:5637528" package="MKDS3-2-5.00" package3d_urn="urn:adsk.eagle:package:5637535/2" value="MKDS3-2-5.00" x="-2.5" y="-3"/>
@@ -1780,12 +1801,12 @@ design rules under a new name.</description>
 <attribute name="DESCRIPTION" value="BSN Series 50 V 15 Ohm 0.83 W N-Channel Enhancement Mode Transistor - SOT-23" x="-7" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="NXP Semiconductors" x="-7" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP" value="BSN20,215" x="-7" y="10" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-7" y="8" size="0.8128" layer="25" font="vector" align="top-center"/>
+<attribute name="NAME" x="-9" y="11.7" size="0.8128" layer="25" font="vector" align="top-center"/>
 <attribute name="PACKAGE" value="TO-236 NXP Semiconductors" x="-7" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PRICE" value="0.17 USD" x="-7" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k" x="-4" y="10" rot="R270">
-<attribute name="NAME" x="-4" y="8" size="0.8128" layer="25" font="vector" align="top-center"/>
+<attribute name="NAME" x="-2.9" y="11" size="0.8128" layer="25" font="vector" rot="R180" align="center-right"/>
 <attribute name="SPICEPREFIX" value="R" x="1" y="10" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-5.905" y="10.635" size="1.27" layer="27" rot="R270"/>
 </element>
@@ -1825,6 +1846,24 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="0.095" y="7.635" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="LOGO1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="OSHW-LOGO-S" package3d_urn="urn:adsk.eagle:package:37099/1" value="OSHW-LOGOS" x="9.8" y="22.5"/>
+<element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="" x="-4.8" y="7" rot="R270">
+<attribute name="NAME" x="-1" y="7" size="0.8128" layer="25" font="vector" align="center-right"/>
+<attribute name="VALUE" x="-5.435" y="5.095" size="1.27" layer="27"/>
+</element>
+<element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="-7.8" y="7" rot="R180">
+<attribute name="NAME" x="-8" y="5.6" size="0.8128" layer="25" font="vector" align="center-right"/>
+<attribute name="SPICEPREFIX" value="R" x="-7.8" y="7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-7.165" y="8.905" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3" value="" x="-4.8" y="4" rot="R270">
+<attribute name="NAME" x="-1" y="4" size="0.8128" layer="25" font="vector" align="center-right"/>
+<attribute name="VALUE" x="5.565" y="7.095" size="1.27" layer="27"/>
+</element>
+<element name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="-7.8" y="4" rot="R180">
+<attribute name="NAME" x="-8" y="2.6" size="0.8128" layer="25" font="vector" align="center-right"/>
+<attribute name="SPICEPREFIX" value="R" x="-2.8" y="4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-2.165" y="5.905" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="D1">
@@ -1841,9 +1880,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="D6">
 <contactref element="J1" pad="4"/>
+<contactref element="R5" pad="2"/>
+<wire x1="-11.303" y1="7.62" x2="-9.27" y2="7.62" width="0.1778" layer="1"/>
+<wire x1="-9.27" y1="7.62" x2="-8.65" y2="7" width="0.1778" layer="1"/>
 </signal>
 <signal name="D7">
 <contactref element="J1" pad="3"/>
+<contactref element="R6" pad="2"/>
+<wire x1="-11.557" y1="5.08" x2="-9.73" y2="5.08" width="0.1778" layer="1"/>
+<wire x1="-9.73" y1="5.08" x2="-8.65" y2="4" width="0.1778" layer="1"/>
 </signal>
 <signal name="D8">
 <contactref element="J1" pad="2"/>
@@ -2004,15 +2049,25 @@ design rules under a new name.</description>
 <via x="6.51" y="6.51" extent="1-16" drill="0.2"/>
 <wire x1="11.557" y1="2.54" x2="9.84" y2="2.54" width="1.27" layer="16"/>
 <wire x1="9.84" y1="2.54" x2="9" y2="1.7" width="1.27" layer="16"/>
+<contactref element="LED1" pad="C"/>
+<contactref element="LED2" pad="C"/>
+<wire x1="-4.05" y1="4" x2="-4" y2="4.05" width="0.1778" layer="1"/>
+<wire x1="-4" y1="4.05" x2="-4" y2="5.5" width="0.1778" layer="1"/>
+<via x="-4" y="5.5" extent="1-16" drill="0.35"/>
+<wire x1="-4" y1="5.5" x2="-4" y2="6.95" width="0.1778" layer="1"/>
+<wire x1="-4" y1="6.95" x2="-4.05" y2="7" width="0.1778" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="J1" pad="1"/>
 <contactref element="Q1" pad="1"/>
 <contactref element="R3" pad="2"/>
-<wire x1="-11.557" y1="0" x2="-5.9" y2="5.657" width="0.1778" layer="1"/>
-<wire x1="-5.9" y1="5.657" x2="-5.9" y2="9.05" width="0.1778" layer="1"/>
 <wire x1="-5.9" y1="9.05" x2="-4.1" y2="9.05" width="0.1778" layer="1"/>
 <wire x1="-4.1" y1="9.05" x2="-4" y2="9.15" width="0.1778" layer="1"/>
+<wire x1="-11.557" y1="0" x2="-7.8" y2="0" width="0.1778" layer="1"/>
+<wire x1="-7.8" y1="0" x2="-4.8" y2="3" width="0.1778" layer="1"/>
+<wire x1="-4.8" y1="3" x2="-4.8" y2="7.5" width="0.1778" layer="1"/>
+<wire x1="-4" y1="8.3" x2="-4" y2="9.15" width="0.1778" layer="1"/>
+<wire x1="-4.8" y1="7.5" x2="-4" y2="8.3" width="0.1778" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="J3" pad="1"/>
@@ -2094,6 +2149,16 @@ design rules under a new name.</description>
 <wire x1="2.79" y1="9.525" x2="2.79" y2="8.64" width="0.1778" layer="1"/>
 <wire x1="2.79" y1="8.64" x2="2" y2="7.85" width="0.1778" layer="1"/>
 </signal>
+<signal name="N$3">
+<contactref element="LED1" pad="A"/>
+<contactref element="R5" pad="1"/>
+<wire x1="-6.95" y1="7" x2="-5.55" y2="7" width="0.1778" layer="1"/>
+</signal>
+<signal name="N$4">
+<contactref element="LED2" pad="A"/>
+<contactref element="R6" pad="1"/>
+<wire x1="-6.95" y1="4" x2="-5.55" y2="4" width="0.1778" layer="1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -2129,6 +2194,11 @@ which will not be processed correctly with this version.
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
